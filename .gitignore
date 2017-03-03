@@ -2,6 +2,9 @@
 logs
 *.log
 npm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Runtime data
 pids
@@ -35,3 +38,17 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# misc
+.DS_Store
+.env
+.editorconfig
+*.orig
+yarn.lock
+
+# folders
+dist/
+typings/
+**/.vscode/
+.idea/
+/build
