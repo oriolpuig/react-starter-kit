@@ -8,8 +8,11 @@ export const HelloComponent = () => {
             <div>
                 <h2 className="prueba">Welcome to React</h2>
             </div>
-            <p >
+            <p>
                 To get started, edit <code>src/HelloComponent.js</code> and save to reload.
+            </p>
+            <p>
+                Styles are sass.
             </p>
         </div>
     );
