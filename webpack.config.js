@@ -26,13 +26,24 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
             },
+            {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                use: [{
+                    loader: "style-loader" // creates style nodes from JS strings
+                }, {
+                    loader: "css-loader" // translates CSS into CommonJS
+                }, {
+                    loader: "sass-loader" // compiles Sass to CSS
+                }]
+            }
         ]
     },
     // For development https://webpack.js.org/configuration/devtool/#for-development
     devtool: 'inline-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 8080,
+        port: 3000,
         noInfo: true,
     },
     plugins: [
