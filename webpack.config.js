@@ -22,20 +22,16 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
+                use: [
+                    'babel-loader'
+                ],
             },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                use: [{
-                    loader: "style-loader" // creates style nodes from JS strings
-                }, {
-                    loader: "css-loader" // translates CSS into CommonJS
-                }, {
-                    loader: "sass-loader" // compiles Sass to CSS
-                }]
+                use: ["style-loader", "css-loader", "sass-loader"]
             }
         ]
     },
