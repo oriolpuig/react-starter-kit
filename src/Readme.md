@@ -1,4 +1,4 @@
-src
+./src
 ============================
 
 We will have all react source on this folder.

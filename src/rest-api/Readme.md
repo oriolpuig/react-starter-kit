@@ -1,4 +1,4 @@
-src/rest-api
+./src/rest-api
 ============================
 
 We will have a folder for each type of content in order to manintenance all api calls.

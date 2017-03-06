@@ -1,4 +1,4 @@
-src/common
+./src/common
 ============================
 
 We will add all the common source (components, constants, ...) to this folder.

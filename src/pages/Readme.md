@@ -1,4 +1,4 @@
-src/pages
+./src/pages
 ============================
 
 We will have a folder for each page that we need to create.
