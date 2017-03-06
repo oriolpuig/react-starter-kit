@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { HelloComponent } from './common/components/Hello';
+import App from './pages/App';
 import css from './style.scss';
 
 // import router
@@ -11,8 +11,8 @@ import store, { history } from './store';
 const router = (
     <Provider store={store}>
         <Router history={history}>
-            <Route path="/" component={HelloComponent}>
-                <IndexRoute component={HelloComponent}/>
+            <Route path="/" component={App}>
+                <IndexRoute component={App}/>
             </Route>
         </Router>
     </Provider>
