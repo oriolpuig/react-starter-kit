@@ -1,4 +1,4 @@
-src/reducers
+./src/reducers
 ============================
 
 We will have a folder for each reducer.
