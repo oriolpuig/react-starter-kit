@@ -1,5 +1,8 @@
 // Reset
 @import 'reset.scss';
 
+$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
 // App Components
 @import 'common/components/components.scss';
