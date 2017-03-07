@@ -3,7 +3,7 @@ import { eventsMockData } from './eventMockData';
 // Fake API using es6 Promises polyfill (with babel-preset-env).
 // In future, we can replace by real one.
 class EventAPI {
-    events = [];
+    events;
 
     constructor() {
         this.events = eventsMockData;

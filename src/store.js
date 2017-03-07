@@ -1,14 +1,15 @@
-import { createStore, compose, applyMiddleware } from 'redux';
-import { syncHistoryWithStore} from 'react-router-redux';
+import { createStore, applyMiddleware } from 'redux';
+import { syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 import thunk from 'redux-thunk';
-import { createHashHistory } from 'history';
 
 // import the root reducer
-import rootReducer from './reducers/index';
+import { rootReducer } from './reducers';
 
-
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(
+    rootReducer,
+    applyMiddleware(thunk)
+);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 

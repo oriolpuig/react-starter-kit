@@ -53,6 +53,11 @@ module.exports = {
             filename: 'index.html', //Name of file in ./dist/
             template: 'index.html', //Name of template in ./src
             hash: true
-        })
+        }),
+        //Expose jquery used
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
     ],
 };
