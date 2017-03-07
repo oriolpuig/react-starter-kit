@@ -2,5 +2,5 @@
     "name": "HelloComponent",
     "version": "1.0.0",
     "private": true,
-    "main": "./HelloComponent.js"
+    "main": "./Hello.js"
 }
