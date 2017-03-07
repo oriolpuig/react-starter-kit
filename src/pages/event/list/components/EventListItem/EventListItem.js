@@ -1,9 +1,13 @@
 import * as React from 'react';
+import { Link } from 'react-router';
+import { routeConstants } from '../../../../../common/constants/route';
 
 export const EventListItemComponent = (props) => {
     return (
         <li>
-            {props.event.name}
+            <Link to={`${routeConstants.event.view}/${props.event.id}`}>
+                {props.event.name}
+            </Link>
         </li>
     );
 };
@@ -15,6 +19,5 @@ EventListItemComponent.propTypes = {
         url: React.PropTypes.string.isRequired,
         startDate: React.PropTypes.number.isRequired,
         endDate: React.PropTypes.number.isRequired,
-        isActive: React.PropTypes.bool.isRequired,
     }),
 };
