@@ -1,6 +1,6 @@
 {
-    "name": "Hello",
+    "name": "Header",
     "version": "1.0.0",
     "private": true,
-    "main": "./Hello.js"
+    "main": "./Header.js"
 }

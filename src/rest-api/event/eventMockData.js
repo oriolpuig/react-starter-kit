@@ -5,6 +5,7 @@ export const eventsMockData = [
         url: 'https://www.meetup.com/es-ES/Techdencias/events/237519464/',
         startDate: new Date('2017-02-08T09:30:00').getTime(),
         endDate: new Date('2017-02-08T14:30:00:00').getTime(),
+        isActive: true,
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ export const eventsMockData = [
         url: 'https://www.meetup.com/es-ES/Techdencias/events/234059977/',
         startDate: new Date('2016-10-08T09:30:00').getTime(),
         endDate: new Date('2016-10-08T14:30:00:00').getTime(),
+        isActive: true,
     },
     {
         id: 3,

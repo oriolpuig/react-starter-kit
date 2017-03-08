@@ -1,12 +1,16 @@
 import * as React from 'react';
-import { HelloComponent } from '../common/components/Hello';
+import { Hello } from '../common/components/Hello';
+import { Header } from '../common/components/Header';
+import { Footer } from '../common/components/Footer';
 
 export class App extends React.Component {
   render() {
     return (
       <div>
-        <HelloComponent />
+        <Header />
+        <Hello />
         {this.props.children}
+        <Footer />
       </div>
     );
   }
