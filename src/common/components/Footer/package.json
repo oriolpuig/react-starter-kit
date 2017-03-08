@@ -1,6 +1,6 @@
 {
-    "name": "Hello",
+    "name": "Footer",
     "version": "1.0.0",
     "private": true,
-    "main": "./Hello.js"
+    "main": "./Footer.js"
 }
