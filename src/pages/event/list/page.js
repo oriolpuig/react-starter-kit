@@ -9,9 +9,11 @@ export class EventListPage extends Component {
     render() {
         const { events } = this.props;
         return (
-            <div>
-                <h2>Event list</h2>
-                <EventListComponent events={events} key={'event-list'} />
+            <div className="container">
+                <div className="row"><h2 className="col-md-12">Event list</h2></div>
+                <div className="row">
+                    <EventListComponent className="col-md-12" events={events} key={'event-list'} />
+                </div>
             </div>
         );
     }

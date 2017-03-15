@@ -4,7 +4,7 @@ import { routeConstants } from '../../../../../common/constants/route';
 
 export const EventListItemComponent = (props) => {
     return (
-        <li>
+        <li className={props.className}>
             <Link to={`${routeConstants.event.view}/${props.event.id}`}>
                 {props.event.name}
             </Link>
@@ -13,6 +13,7 @@ export const EventListItemComponent = (props) => {
 };
 
 EventListItemComponent.propTypes = {
+    className: React.PropTypes.string,
     event: React.PropTypes.shape({
         id: React.PropTypes.number.isRequired,
         name: React.PropTypes.string.isRequired,
