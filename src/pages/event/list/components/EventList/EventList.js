@@ -5,16 +5,16 @@ export class EventListComponent extends React.Component {
 
     renderList(events) {
         return (
-            <ul >
-                {events.map((e, index) => <EventListItemComponent event={e} key={$`event-list-item-` + index} />)}
+            <ul className="list-group">
+                {events.map((e, index) => <EventListItemComponent className="list-group-item" event={e} key={$`event-list-item-` + index} />)}
             </ul >
         );
     }
 
     render() {
-        const { events } = this.props;
+        const { events, className } = this.props;
         return (
-            <div>
+            <div className={className}>
                 {events.length > 0 ? this.renderList(events) : 'No data'}
             </div>
         );
@@ -22,6 +22,7 @@ export class EventListComponent extends React.Component {
 }
 
 EventListComponent.propTypes = {
+    className: React.PropTypes.string,
     events: React.PropTypes.arrayOf(
         React.PropTypes.shape({
             id: React.PropTypes.number.isRequired,
